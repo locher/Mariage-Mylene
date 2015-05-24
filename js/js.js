@@ -1,9 +1,7 @@
 // Ajouter class JS
-
 $('body').addClass('js');
 
 // Parallaxe du header
-
 $(window).scroll(function(e){
     parallax();
 });
@@ -14,11 +12,17 @@ function parallax(){
   $('.top-banner h2').css('top',42-(scrolled*0.15)+'%');
 }
 
+//Menu sticky
+var sticky = new Waypoint.Sticky({
+  element: $('.top-banner nav')[0]
+})
+
+
+
 // Animation
 
 $('.raccourci-rep .wrapper').each(function() {
     $(this).waypoint(function() {
-      console.log(this);
       $('.raccourci-rep .wrapper').addClass('fadeIn');    
     }, {
       offset: '80%'

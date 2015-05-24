@@ -141,6 +141,8 @@ body{
 		@extend .animated;
 		@extend .fadeInUp;
 
+		animation-delay: .3s;
+
 		span{
 			color: $orange;
 		}
@@ -156,8 +158,6 @@ body{
 
 		@extend .animated;
 		@extend .fadeInUp;
-
-		animation-delay: .3s;
 	}
 
 	.pre-compteur{
@@ -186,6 +186,16 @@ nav{
 		text-decoration: none;
 		padding: 1.2em;
 	}
+}
+
+// Menu accroché en haut
+
+.stuck{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .link-disabled{
@@ -221,6 +231,8 @@ nav{
 .js .raccourci-rep .wrapper{
 	@extend %alpha0;
 	@extend .animated;
+
+	animation-delay: .15s;
 }
 
 	.bt{
