@@ -1,0 +1,246 @@
+/* Font-weight reminder :
+
+300 : Light
+400 : Regular
+500 : Medium
+600 : Semi-bold
+700 : Bold
+800 : Heavy
+900 : Black
+
+*/
+
+$rouge: #cf5b61;
+$text-rouge: #4a2123;
+$gris: #f2f2f2;
+$noir: #303130;
+$orange: #fece78;
+
+$espace: 40px;
+
+@import "reset";
+@import "fontfaces";
+@import "animate";
+
+%alpha0{
+	opacity: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body{
+	font-size: 1.7rem;
+	font-family: 'Alegreya sans', Arial, sans-serif;
+	font-weight: 400;
+	color: $noir;
+	background-color: #fff;
+	height: 100%;
+}
+
+.wrapper{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+// En-tête
+
+.entete{
+	padding: $espace $espace 20px;
+	font-family: 'Alegreya', Times, serif;
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	span{
+		color: $rouge;
+	}
+
+	&:after{
+		content:'';
+		display: block;
+		height: 18px;
+		width: 150px;
+		margin: 10px auto;
+
+		background: url('../img/arabesque.svg') center no-repeat;
+		background-size: 150px 18px;
+	}
+}
+
+// Top banner
+
+.top-banner{
+	
+	height: calc(100% - 128px);
+	text-align: center;	
+	vertical-align: middle;
+	position: relative;
+
+	.bg{
+		position: absolute;
+		z-index: -1;
+		min-height: 100%;
+		width: 100%;
+		background: url('../img/banner.jpg');
+		background-size: cover;
+		background-position: center;
+  		
+	}
+
+	h2{
+		font-size: 14.5rem;
+		color: #fff;
+		font-family: 'Great Vibes';		
+  		text-shadow: 0 0 40px rgba(#000, .75);
+  		position: absolute;
+  		top: 32%;
+  		width: 100%;
+  		left: 0;
+
+  		@extend .animated;
+  		@extend .fadeInDown;
+
+	}
+}
+
+.js .top-banner{
+
+	.bg{
+		min-height: calc(100% - 128px);
+		position: fixed;
+		top:128px; //à modifier dans le js aussi, sinon saut au scroll
+		left:0;
+  		
+	}
+
+	h2{
+	  	position: fixed;
+		top: 42%; //à modifier dans le js aussi, sinon saut au scroll
+	}
+} 
+
+	.date-event{
+		font-size: 3.5rem;
+		font-family: 'Alegreya sans';
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: 0 0 20px rgba(#000, .75);
+		position: absolute;
+		top: calc(42% + 70px);
+		left: 0;
+		width: 100%;
+		text-align: center;
+
+		@extend .animated;
+		@extend .fadeInUp;
+
+		span{
+			color: $orange;
+		}
+	}
+
+	.compteur{
+		position: absolute;
+		bottom: 20%;
+		width: 100%;
+		left: 0;
+		color:#fff;
+		text-shadow: 0 0 10px rgba(#000, .75);
+
+		@extend .animated;
+		@extend .fadeInUp;
+
+		animation-delay: .3s;
+	}
+
+	.pre-compteur{
+		margin-bottom: .5em;
+	}
+
+	.p-compteur{
+		font-size: 2.4rem;
+		color: $orange;
+	}
+
+// Menu
+
+nav{
+	background-color: rgba(#fff, .87);
+	text-align: center;
+
+	li{
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	a{
+		display: block;
+		color: rgba(#000, .46);
+		text-decoration: none;
+		padding: 1.2em;
+	}
+}
+
+.link-disabled{
+	color: rgba(#000, .12);
+}
+
+// Raccourci réponse
+
+.raccourci-rep{
+	background-color: $rouge;
+	text-align: center;
+	padding: $espace;
+
+	h2{
+		font-weight: 300;
+		font-size: 3rem;
+		color: #fff;
+		margin-bottom: .2em;
+	}
+
+	p{
+		font-size: 2rem;
+		font-weight: 500;
+		color: $text-rouge;
+		margin-bottom: 1.45em;
+
+		span{
+			font-size: 1.3em;
+		}
+	}
+}
+
+.js .raccourci-rep .wrapper{
+	@extend %alpha0;
+	@extend .animated;
+}
+
+	.bt{
+		display: inline-block;
+		background-color: #f4e6e1;
+		padding: .9em 3em;
+		text-decoration: none;
+		border-radius: 60px;
+
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: darken($rouge, 20%);
+		font-weight: 700;
+		box-shadow: 0 4px 0 darken($rouge, 20%);
+	}
+
+// Love story
+
+.lovestory{
+	height: 1000px;
+	background-color: #fff;
+}
+
