@@ -49,6 +49,25 @@ body{
 	margin: 0 auto;
 }
 
+.classic-h2{
+
+	text-align: center;
+	font-family: 'Alegreya', serif;
+	font-size: 4.5rem;
+	font-weight: 700;
+
+	&:after{
+		content:'';
+		display: block;
+		height: 18px;
+		width: 150px;
+		margin: 10px auto;
+
+		background: url('../img/arabesque.svg') center no-repeat;
+		background-size: 150px 18px;
+	}
+}
+
 // En-tête
 
 .entete{
@@ -118,11 +137,6 @@ body{
 		top:128px; //à modifier dans le js aussi, sinon saut au scroll
 		left:0;
   		
-	}
-
-	h2{
-	  	position: fixed;
-		top: 42%; //à modifier dans le js aussi, sinon saut au scroll
 	}
 } 
 
@@ -196,6 +210,7 @@ nav{
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: rgba(#fff, .95);
 }
 
 .link-disabled{
@@ -252,7 +267,180 @@ nav{
 // Love story
 
 .lovestory{
-	height: 1000px;
 	background-color: #fff;
+	padding: 50px $espace/2;
+
+
+	.date{
+		margin-left: 110px;
+		text-transform: uppercase;
+		color: $rouge;
+		margin-bottom: $espace/2;
+	}
+
+	h3{
+		font-family: 'Alegreya', serif;
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+
+	.ligne{
+		width: 1px;
+		position: absolute;
+		background-color: #bdb6a6;
+		height: 400px;
+		left: 50%;
+	}
 }
+
+.wrapper-lovestory{
+	position: relative;
+	margin-top: 50px;
+}
+
+.evt-lovestory{
+
+	margin-bottom: $espace;
+	width: 50%;
+	position: absolute;
+	@extend %alpha0;
+
+	&::after{ // Le trait horizontal
+		content:'';
+		display: block;
+		height: 1px;
+		width: 110px;
+		background-color: #bdb6a6;
+		position: absolute;
+		top: calc(50% + 13px); // 13px : (hauteur de la date + margin) / 2
+		z-index: -1;
+	}
+
+	&::before{ // Le coeur
+		content: url('../img/coeur.svg');
+		background-color: #fff;
+		display: block;
+		position: absolute;
+		top: calc(50% + 5px); // en fait 50% + 13 (voir en haut) - hauteur du coeur / 2
+		border: 10px solid #fff;
+	}
+
+
+
+	&:nth-child(even){ // Les events de gauche
+
+		text-align: right;
+
+		left:0;
+
+		.evt-text{
+			margin-right: 30px;
+		}
+
+		.date{
+			margin-right: 100px;
+		}
+
+		&::after{ // Le trait horizontal
+			right: 0;
+		}
+
+		&::before{ // Le coeur
+			right: -20px; //la largeur du coeur / 2 + la bordure
+		}
+	}
+
+
+	&:nth-child(odd){ // Les events de droite
+
+		right: 0;
+
+		.wrapper-evt{
+			margin-left: 10%;
+		}
+
+		.evt-text{
+			margin-left: 30px;
+			order: 2;
+		}
+		.img-evt{
+			order:1;
+		}
+
+		&:after{ // Le trait horizontal
+			left: 0;
+		}
+
+		&:before{ // Le coeur
+			left: -20px; //la largeur du coeur / 2 + la bordure
+		}
+	}
+}
+
+.evt1{
+	animation-delay: 0;
+	top: 0;
+}
+
+.evt2{
+	top: 150px;
+}
+
+
+.evt3{
+	top: 300px;
+}
+
+.evt4{
+	top: 450px;
+}
+
+.js .evt-lovestory{
+	//@extend %alpha0;
+}
+
+.wrapper-evt{
+	max-width: 90%;
+	background-color: $gris;
+	border-radius: 5px;
+	padding: $espace/2 $espace;
+	display: flex;
+	align-items: center;
+	
+}
+
+.img-evt{
+	width: 150px;
+	height: 150px;
+
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.evt-text{
+	flex: 1;
+
+	p{
+		line-height: 1.3em;
+		font-size: 1.5rem;
+	}	
+}
+
+// Partie "le Mariage"
+
+.mariage{
+	background-color: $gris;
+	border-radius: 5px;
+	padding: $espace;
+	margin-bottom: $espace;
+}
+
+
+
+
+
+
+
+
 

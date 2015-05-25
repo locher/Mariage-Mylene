@@ -2,14 +2,17 @@
 $('body').addClass('js');
 
 // Parallaxe du header
-$(window).scroll(function(e){
-    parallax();
+$(document).ready(function() {
+
+    $(window).scroll(function(e){
+        parallax();
+    });
 });
 
 function parallax(){
   var scrolled = $(window).scrollTop();
   $('.bg').css('top',128-(scrolled*0.2)+'px');
-  $('.top-banner h2').css('top',42-(scrolled*0.15)+'%');
+  $('.top-banner h2').css('top',32-(scrolled*0.15)+'%');
 }
 
 //Menu sticky
@@ -21,12 +24,63 @@ var sticky = new Waypoint.Sticky({
 
 // Animation
 
-$('.raccourci-rep .wrapper').each(function() {
-    $(this).waypoint(function() {
-      $('.raccourci-rep .wrapper').addClass('fadeIn');    
-    }, {
-      offset: '80%'
+$(document).ready(function() {
+
+    $('.raccourci-rep .wrapper').each(function() {
+        $(this).waypoint(function() {
+          $('.raccourci-rep .wrapper').addClass('fadeIn');    
+        }, {
+          offset: '80%'
+        });
     });
+
+    $('.evt1').each(function() {
+        $(this).waypoint(function() {
+          $('.evt1').addClass('fadeInLeft animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+
+    $('.evt3').each(function() {
+        $(this).waypoint(function() {
+          $('.evt3').addClass('fadeInLeft animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+
+    $('.evt2').each(function() {
+        $(this).waypoint(function() {
+          $('.evt2').addClass('fadeInRight animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+
+    $('.evt4').each(function() {
+        $(this).waypoint(function() {
+          $('.evt4').addClass('fadeInRight animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+});
+
+
+// Choper la hauteur de lovestory pour l'appliquer sur la ligne et le parent
+
+$(document).ready(function() {
+    position_haut = $('.evt1').offset();
+    hauteur_haut = position_haut.top;
+
+    position_bas = $('.evt4').offset();
+    hauteur_last = $('.evt4').height();
+    hauteur_bas = position_bas.top + hauteur_last;
+
+    $('.ligne').css('height', hauteur_bas - hauteur_haut);
+    $('.wrapper-lovestory').css('height', hauteur_bas - hauteur_haut);
+
 });
 
 
