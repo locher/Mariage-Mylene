@@ -304,7 +304,6 @@ nav{
 	margin-bottom: $espace;
 	width: 50%;
 	position: absolute;
-	@extend %alpha0;
 
 	&::after{ // Le trait horizontal
 		content:'';
@@ -313,7 +312,7 @@ nav{
 		width: 110px;
 		background-color: #bdb6a6;
 		position: absolute;
-		top: calc(50% + 13px); // 13px : (hauteur de la date + margin) / 2
+		top: calc(50% + 19px); // 19px : (hauteur de la date + margin) / 2
 		z-index: -1;
 	}
 
@@ -397,7 +396,7 @@ nav{
 }
 
 .js .evt-lovestory{
-	//@extend %alpha0;
+	@extend %alpha0;
 }
 
 .wrapper-evt{
