@@ -65,6 +65,31 @@ $(document).ready(function() {
           offset: '80%'
         });
     });
+
+    $('.etape1').each(function() {
+        $(this).waypoint(function() {
+          $('.etape1').addClass('fadeInLeft animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+
+    $('.etape2').each(function() {
+        $(this).waypoint(function() {
+          $('.etape2').addClass('fadeInRight animated');    
+        }, {
+          offset: '80%'
+        });
+    });
+
+
+    $('.dormir').each(function() {
+        $(this).waypoint(function() {
+          $('.dormir').addClass('fadeIn animated');    
+        }, {
+          offset: '80%'
+        });
+    });
 });
 
 
@@ -151,3 +176,25 @@ jQuery(function($){
     // Lancement du compte à rebours au chargement de la page
     countdownManager.init();
 });
+
+// Resize des textarea
+autosize($('.reponse textarea'));
+
+// Apparition formulaire
+
+function checked(){
+
+    if($('#acceptation_participation').prop('checked')){
+        $('.checkbox_accompagnant').fadeIn();
+    }
+
+    else{
+        $('.checkbox_accompagnant').fadeOut();
+    }
+}
+
+$('.reponse').change(function(){
+    checked();
+});
+    
+

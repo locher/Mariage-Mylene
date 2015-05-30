@@ -1,0 +1,100 @@
+form{
+	font-size: 1.7rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"]{
+	border:0;
+	border-radius: 5px;
+	font-family: inherit;
+	padding: 17px 25px;
+	font-size: 1.7rem;
+	font-weight: 700;
+
+	&::placeholder{
+		font-weight:500;
+	}
+}
+
+// Les radios
+
+//Checked et :not checked pour pas cibler les vieux navigateurs
+//Pour le reste, les "+" et ::before/after font le même job
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked){
+	display: none;
+}
+
+input[type="radio"] + label{
+	margin-right: 1.2em;
+}
+
+
+input[type="radio"] + label::before{
+	transition: all ease .3s;
+	content:'';
+	display: inline-block;
+	height: .6em;
+	width: .6em;
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: #fff;
+	border: .3em solid #fff;
+	margin-right: .4em;
+
+	position: relative;
+	top: 3px;
+}
+
+input[type="radio"]:checked + label::before{
+	background-color: #232323;
+}
+
+// Les checkboxs
+
+//Checked et :not checked pour pas cibler les vieux navigateurs
+//Pour le reste, les "+" et ::before/after font le même job
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked){
+	display: none;
+}
+
+input[type="checkbox"] + label{
+	margin-right: 1.2em;
+	position: relative;
+	padding-left: 1.8em;
+}
+
+// Le cadre
+input[type="checkbox"] + label::before{
+	transition: all ease .3s;
+	content: '';
+	display: inline-block;
+	height: .7em;
+	width: .7em;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #fff;
+	border: .3em solid #fff;
+	margin-right: .6em;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+// La checkbox
+input[type="checkbox"] + label::after{
+	transition: opacity ease .3s;
+	content:url('../img/ico-checked.svg');
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::after{
+	opacity: 1;
+}

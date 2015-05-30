@@ -15,16 +15,30 @@ $text-rouge: #4a2123;
 $gris: #f2f2f2;
 $noir: #303130;
 $orange: #fece78;
+$trait: #bdb6a6;
 
 $espace: 40px;
 
 @import "reset";
 @import "fontfaces";
 @import "animate";
+@import "forms";
 
 %alpha0{
 	opacity: 0;
 }
+
+%content-h3{
+	font-family: 'Alegreya', serif;
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 15px;
+}
+
+strong{
+	font-weight: bold;
+}
+
 
 *{
 	box-sizing: border-box;
@@ -42,6 +56,7 @@ body{
 	color: $noir;
 	background-color: #fff;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .wrapper{
@@ -104,7 +119,7 @@ body{
 
 	.bg{
 		position: absolute;
-		z-index: -1;
+		z-index: -100;
 		min-height: 100%;
 		width: 100%;
 		background: url('../img/banner.jpg');
@@ -268,7 +283,7 @@ nav{
 
 .lovestory{
 	background-color: #fff;
-	padding: 50px $espace/2;
+	padding: 50px $espace/2 0;
 
 
 	.date{
@@ -279,16 +294,13 @@ nav{
 	}
 
 	h3{
-		font-family: 'Alegreya', serif;
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 15px;
+		@extend %content-h3;
 	}
 
 	.ligne{
 		width: 1px;
 		position: absolute;
-		background-color: #bdb6a6;
+		background-color: $trait;
 		height: 400px;
 		left: 50%;
 	}
@@ -310,7 +322,7 @@ nav{
 		display: block;
 		height: 1px;
 		width: 110px;
-		background-color: #bdb6a6;
+		background-color: $trait;
 		position: absolute;
 		top: calc(50% + 19px); // 19px : (hauteur de la date + margin) / 2
 		z-index: -1;
@@ -429,16 +441,296 @@ nav{
 // Partie "le Mariage"
 
 .mariage{
-	background-color: $gris;
+
+	padding-top: 100px;
+	background-color: #fff;
+	position: relative;
+	text-align: center;
+
+	&::after{ // Continuation du trait
+		content:'';
+		display: block;
+		width: 1px;
+		height: 100px;
+		background-color: $trait;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+
+	&::before{ // coeur
+		content: url('../img/coeur.svg');
+		background-color: #fff;
+		display: block;
+		position: absolute;
+		top: 40px;
+		left: calc(50% - 20px);
+		border: 10px solid #fff;
+		z-index: 2;
+	}
+
+	.wrapper{
+		background-color: $gris;
+		border-radius: 5px;
+		padding: $espace;
+
+	}
+
+	.intro-mariage{
+
+		margin-bottom: $espace;
+
+		p{
+			max-width: 700px;
+			font-size: 2rem;
+			line-height: 1.4em;
+			text-align: center;
+			margin: 30px auto;
+		}
+
+		blockquote{
+			font-family: 'Great Vibes';	
+			color: $rouge;
+			font-size: 6rem;
+			margin-top: 40px;
+		}
+	}
+}
+
+.etape{
+	text-align: left;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: top;
 	border-radius: 5px;
-	padding: $espace;
-	margin-bottom: $espace;
+
+	width: calc(50% - #{$espace/2};
+
+	&:nth-child(1){
+		margin-right: $espace/2;
+	}
+
+	&:nth-child(2){
+		margin-left: $espace/2;
+	}
+
+	.img-etape{
+		height: 350px;
+		background-size: cover;
+		background-position: center;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.wrapper-etape{
+		padding: $espace;
+	}
+
+	h3{
+		@extend %content-h3;
+	}
+
+	p{
+		line-height: 1.4em;
+		margin-bottom: .5em;
+	}
+
+	.horaire{
+		text-transform: uppercase;
+		color: $rouge;
+		margin-bottom: 1em;
+	}
+}
+
+.js .etape{
+
+	@extend %alpha0;
+
+	&.etape2{
+		animation-delay: .5s;
+	}
 }
 
 
+//Dormir
 
+.dormir{
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	padding-top: 100px;
 
+	&::after{ // Continuation du trait
+		content:'';
+		display: block;
+		width: 1px;
+		height: 100px;
+		background-color: $trait;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
 
+	&::before{ // coeur
+		content: url('../img/coeur.svg');
+		background-color: #fff;
+		display: block;
+		position: absolute;
+		top: 40px;
+		left: calc(50% - 20px);
+		border: 10px solid #fff;
+		z-index: 2;
+	}
+
+	h2{
+		margin-bottom: 30px;
+	}
+
+	p{
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 2rem;
+		line-height: 1.4em;
+		margin-bottom: .5em;
+
+		span{
+			color: $rouge;
+		}
+	}
+
+	em{
+		font-style: italic;
+		color: #9d9d9d;
+	}
+}
+
+.js .dormir{
+	@extend %alpha0;
+	animation-delay: .2s;
+}
+
+.reponse{
+	margin-top: 60px;
+	background-color: $rouge;
+	padding: $espace;
+	color: #fff;
+
+	input:not([type="submit"]),
+	textarea{
+		font-size: 1.7rem;
+		font-family: 'Alegreya sans', Arial, sans-serif;
+		font-weight: 400;
+		color: $noir;
+		padding: .7em 1.2em;
+		border-radius: 5px;
+		border: 0;
+	}
+
+	.sous-h2{
+		text-align: center;
+		font-size: 2rem;
+		color: darken($rouge, 35%);
+	}
+
+	form{
+		max-width: 700px;
+		margin: $espace auto;
+	}
+
+	label{
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+	}
+
+	.wrapper-form{
+		display: flex;
+
+		.group-form{
+			flex:1;
+			margin-bottom: 25px;
+		}
+
+		.group-form:nth-child(1){
+			margin-right: 20px;
+		}
+
+		input[type="text"],
+		input[type="email"]{
+			width: 100%;
+		}
+
+	}
+
+	.group-form{
+		label{
+			display: block;
+		}
+	}
+
+	.group-margin{
+		margin-bottom: 30px;
+	}
+
+	.checkbox_accompagnant{
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+
+	textarea{
+		display: block;
+		width: 100%;
+		min-height: 50px;
+		resize: vertical;
+		height: auto;
+	}
+
+	.resa{
+	
+		margin-bottom: 25px;
+
+		label{
+			display: inline-block;
+		}
+
+		span{
+					text-transform: uppercase;
+		font-size: 1.4rem;
+		}
+
+		input[type="checkbox"] + label{
+			margin-right: 0;
+		}
+
+		input[type="number"]{
+			padding: 0.7em;
+			width: 70px;
+			text-align: center;
+			margin: 0 .7em;
+		}
+	}
+	
+	.wrapper-submit{
+		text-align: center;
+	}
+
+	input[type="submit"]{
+		border: 0;
+		margin-top: 30px;
+		font-size: 2rem;
+	}
+
+	.message{
+		margin-top: 25px;
+	}
+}
+
+.js{
+	.checkbox_accompagnant,
+	.nom-accompagnants,
+	.group-chambre{
+		display: none;
+	}
+} 
 
 
 
