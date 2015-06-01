@@ -19,9 +19,11 @@ $trait: #bdb6a6;
 
 $espace: 40px;
 
+
 @import "reset";
 @import "fontfaces";
 @import "animate";
+@import "breakpoints";
 @import "forms";
 
 %alpha0{
@@ -141,7 +143,13 @@ body{
   		@extend .animated;
   		@extend .fadeInDown;
 
+  		@include width-below(900px){
+		    font-size: 10rem;
+		    line-height: 7rem;
+		}
 	}
+
+
 }
 
 //L'icone souris
@@ -158,11 +166,11 @@ body{
 	position: absolute;
 	bottom: 110px;
 	right: 50%;
-	animation: mabite 1s infinite;
+	animation: arrow_scroll 1s infinite;
 	animation-timing-function: ease-out;
 }
 
-@keyframes mabite{
+@keyframes arrow_scroll{
 	0%{
 		bottom: 110px;
 	}
@@ -200,6 +208,10 @@ body{
 
 		animation-delay: .3s;
 
+		@include width-below(900px){
+			font-size: 2.5rem;
+		}
+
 		span{
 			color: $orange;
 		}
@@ -232,9 +244,21 @@ nav{
 	background-color: rgba(#fff, .87);
 	text-align: center;
 
+	@include width-below(950px){
+			position: absolute;
+			z-index: 100;
+			width: 100%;
+			top: 0;
+	}
+
 	li{
 		display: inline-block;
 		text-transform: uppercase;
+
+		@include width-below(950px){
+			display: inline-block;
+			width: 50%;
+		}
 	}
 
 	a{
@@ -362,76 +386,89 @@ nav{
 	width: 50%;
 	position: absolute;
 
-	&::after{ // Le trait horizontal
-		content:'';
-		display: block;
-		height: 1px;
-		width: 110px;
-		background-color: $trait;
-		position: absolute;
-		top: calc(50% + 19px); // 19px : (hauteur de la date + margin) / 2
-		z-index: -1;
+	@include width-below(1050px){
+		width: 100%;
+		position: static;
 	}
 
-	&::before{ // Le coeur
-		content: url('../img/coeur.svg');
-		background-color: #fff;
-		display: block;
-		position: absolute;
-		top: calc(50% + 5px); // en fait 50% + 13 (voir en haut) - hauteur du coeur / 2
-		border: 10px solid #fff;
-	}
+	@include width-above(1050px){
 
-
-
-	&:nth-child(even){ // Les events de gauche
-
-		text-align: right;
-
-		left:0;
-
-		.evt-text{
-			margin-right: 30px;
-		}
-
-		.date{
-			margin-right: 100px;
-		}
-
-		&::after{ // Le trait horizontal
-			right: 0;
+			&::after{ // Le trait horizontal
+			content:'';
+			display: block;
+			height: 1px;
+			width: 110px;
+			background-color: $trait;
+			position: absolute;
+			top: calc(50% + 19px); // 19px : (hauteur de la date + margin) / 2
+			z-index: -1;
 		}
 
 		&::before{ // Le coeur
-			right: -20px; //la largeur du coeur / 2 + la bordure
+			content: url('../img/coeur.svg');
+			background-color: #fff;
+			display: block;
+			position: absolute;
+			top: calc(50% + 5px); // en fait 50% + 13 (voir en haut) - hauteur du coeur / 2
+			border: 10px solid #fff;
 		}
+
+
+
+		&:nth-child(even){ // Les events de gauche
+
+			text-align: right;
+
+			left:0;
+
+			.evt-text{
+				margin-right: 30px;
+			}
+
+			.date{
+				margin-right: 100px;
+			}
+
+			&::after{ // Le trait horizontal
+				right: 0;
+			}
+
+			&::before{ // Le coeur
+				right: -20px; //la largeur du coeur / 2 + la bordure
+			}
+		}
+
+
+		&:nth-child(odd){ // Les events de droite
+
+			right: 0;
+
+			.wrapper-evt{
+				margin-left: 10%;
+			}
+
+			.evt-text{
+				margin-left: 30px;
+				order: 2;
+			}
+			.img-evt{
+				order:1;
+			}
+
+			&:after{ // Le trait horizontal
+				left: 0;
+			}
+
+			&:before{ // Le coeur
+				left: -20px; //la largeur du coeur / 2 + la bordure
+			}
+		}
+
 	}
 
 
-	&:nth-child(odd){ // Les events de droite
 
-		right: 0;
 
-		.wrapper-evt{
-			margin-left: 10%;
-		}
-
-		.evt-text{
-			margin-left: 30px;
-			order: 2;
-		}
-		.img-evt{
-			order:1;
-		}
-
-		&:after{ // Le trait horizontal
-			left: 0;
-		}
-
-		&:before{ // Le coeur
-			left: -20px; //la largeur du coeur / 2 + la bordure
-		}
-	}
 }
 
 .evt1{
@@ -463,6 +500,12 @@ nav{
 	padding: $espace/2 $espace;
 	display: flex;
 	align-items: center;
+
+	@include width-below(1050px){
+		max-width: 100%;
+	}
+
+
 	
 }
 
@@ -551,6 +594,12 @@ nav{
 
 	width: calc(50% - #{$espace/2};
 
+	@include width-below(700px){
+		display: block;
+		width: 100%;
+		margin: 0 0 $espace 0 !important;
+	}
+
 	&:nth-child(1){
 		margin-right: $espace/2;
 	}
@@ -627,6 +676,10 @@ nav{
 	display: flex;
 	align-items: center;
 
+	@include width-below(1000px){
+		display: block;
+	}
+
 
 	h3{
 		@extend %content-h3;
@@ -639,13 +692,18 @@ nav{
 
 }
 
-.photo-repas{
+.repas-uniquement .img-etape{
 	background: url('../img/photo-repas.jpg');
 	background-size: cover;
 	background-position: center center;
 	width: 33%;
 	border-radius: 4px 0 0 4px;
 	min-height: 250px;
+
+	@include width-below(1000px){
+		width: 100%;
+		min-height: 350px;
+	}
 }
 
 .contenu-repas{

@@ -26,12 +26,10 @@ var sticky = new Waypoint.Sticky({
 function image_scroll(){
     if(window.pageYOffset > 1000){
         $('.bg').hide();
-        console.log('caché');
 
     }
     else{
         $('.bg').show();
-        console.log('affiché');
     }
 }
 
