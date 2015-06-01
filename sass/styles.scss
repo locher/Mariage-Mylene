@@ -144,6 +144,34 @@ body{
 	}
 }
 
+//L'icone souris
+
+.top-banner:after{
+	content: url('../img/souris.svg');
+	position: absolute;
+	bottom: 40px;
+	right: calc(50% - 12px);
+}
+
+.top-banner:before{
+	content: url('../img/arrows.svg');
+	position: absolute;
+	bottom: 110px;
+	right: 50%;
+	animation: mabite 1s infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes mabite{
+	0%{
+		bottom: 110px;
+	}
+
+	100%{
+		bottom: 115px;
+	}
+} 
+
 .js .top-banner{
 
 	.bg{
@@ -179,7 +207,7 @@ body{
 
 	.compteur{
 		position: absolute;
-		bottom: 20%;
+		bottom: 23%;
 		width: 100%;
 		left: 0;
 		color:#fff;
@@ -210,10 +238,20 @@ nav{
 	}
 
 	a{
+		transition: color ease .4s;
 		display: block;
 		color: rgba(#000, .46);
 		text-decoration: none;
 		padding: 1.2em;
+
+		&:hover{
+			color: $rouge;
+		}
+	}
+
+	a.actif{
+		font-weight: 700;
+		color: $rouge;
 	}
 }
 
@@ -291,6 +329,13 @@ nav{
 		text-transform: uppercase;
 		color: $rouge;
 		margin-bottom: $espace/2;
+
+		&:before{
+			content: url('../img/calendrier.svg');
+			margin-right: 7px;
+			position: relative;
+			top: 5px;
+		}
 	}
 
 	h3{
@@ -533,12 +578,19 @@ nav{
 		line-height: 1.4em;
 		margin-bottom: .5em;
 	}
+}
 
-	.horaire{
-		text-transform: uppercase;
-		color: $rouge;
-		margin-bottom: 1em;
-	}
+.horaire{
+	text-transform: uppercase;
+	color: $rouge;
+	margin-bottom: 1em;
+
+			&:before{
+			content: url('../img/calendrier.svg');
+			margin-right: 7px;
+			position: relative;
+			top: 5px;
+		}
 }
 
 .js .etape{
@@ -551,13 +603,75 @@ nav{
 }
 
 
+
+
+
+
+
+
+
+
+
+//Repas
+
+.repas-uniquement{
+	background-color: #fff;
+	padding-top: 100px;
+}
+
+.content-repas{
+	background-color: $gris;
+	padding: $espace;
+	margin-top: $espace;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+
+
+	h3{
+		@extend %content-h3;
+	}
+
+	p{
+		line-height: 1.4em;
+		margin-bottom: .5em;
+	}
+
+}
+
+.photo-repas{
+	background: url('../img/photo-repas.jpg');
+	background-size: cover;
+	background-position: center center;
+	width: 33%;
+	border-radius: 4px 0 0 4px;
+	min-height: 250px;
+}
+
+.contenu-repas{
+	background-color: #fff;
+	border-radius: 0 4px 4px 0;
+	padding: $espace 0 $espace $espace;
+	flex: 1;
+	height: 100%;
+	min-height: 250px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
 //Dormir
 
 .dormir{
 	background-color: #fff;
 	text-align: center;
 	position: relative;
-	padding-top: 100px;
+	padding: 100px;
 
 	&::after{ // Continuation du trait
 		content:'';
@@ -693,8 +807,8 @@ nav{
 		}
 
 		span{
-					text-transform: uppercase;
-		font-size: 1.4rem;
+			text-transform: uppercase;
+			font-size: 1.4rem;
 		}
 
 		input[type="checkbox"] + label{
@@ -722,6 +836,7 @@ nav{
 	.message{
 		margin-top: 25px;
 	}
+
 }
 
 .js{
@@ -731,6 +846,43 @@ nav{
 		display: none;
 	}
 } 
+
+
+.wrapper-fin{
+	display: flex;
+}
+
+// liste
+
+.liste{
+
+	padding: $espace;
+	flex: 1;
+
+	p{
+		line-height: 1.4em;
+		margin-bottom: .5em;
+		text-align: center;
+	}
+
+	p + p{
+		font-weight: 900;
+	}
+}
+
+// dresscode
+
+.dresscode{
+	background-color: $gris;
+	padding: $espace;
+	flex: 1;
+
+	p{
+		line-height: 1.4em;
+		margin-bottom: .5em;
+		text-align: center;
+	}
+}
 
 
 

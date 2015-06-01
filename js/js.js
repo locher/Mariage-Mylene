@@ -21,6 +21,25 @@ var sticky = new Waypoint.Sticky({
 })
 
 
+//Virer l'image 
+
+function image_scroll(){
+    if(window.pageYOffset > 1000){
+        $('.bg').hide();
+        console.log('caché');
+
+    }
+    else{
+        $('.bg').show();
+        console.log('affiché');
+    }
+}
+
+$(document).scroll(function(){
+    image_scroll();
+});
+
+
 
 // Animation
 
@@ -182,19 +201,52 @@ autosize($('.reponse textarea'));
 
 // Apparition formulaire
 
-function checked(){
+// Je vérifie si c'est checké, si oui des trucs apparaissent, si non ils disparaissent
+
+function verif_participation(){
 
     if($('#acceptation_participation').prop('checked')){
-        $('.checkbox_accompagnant').fadeIn();
+        $('.checkbox_accompagnant').slideDown();
+        $('.resa').slideDown();
+
     }
 
     else{
-        $('.checkbox_accompagnant').fadeOut();
+        $('.checkbox_accompagnant').slideUp();
+        $('.nom-accompagnants').slideUp();
+        $('.resa').slideUp();
     }
 }
 
+function verif_accompagnants(){
+
+    if($('#accompagne').prop('checked') && $('#acceptation_participation').prop('checked')){
+        $('.nom-accompagnants').slideDown();
+    }
+
+    else{
+        $('.nom-accompagnants').slideUp();
+    }
+}
+
+ // Je lance la vérif une fois au chargement (si refresh)
+    verif_participation();
+    verif_accompagnants();
+
+// Et au changement dans le formulaire
 $('.reponse').change(function(){
-    checked();
+    verif_participation();
+    verif_accompagnants();
 });
     
+//Scroll menu
 
+$('nav a').click(function(){
+    var cible = $(this).attr('href');
+    $(window).scrollTo(cible, 1100);
+});
+
+$('.raccourci-rep a').click(function(){
+    var cible = $(this).attr('href');
+    $(window).scrollTo(cible, 1100);
+});
