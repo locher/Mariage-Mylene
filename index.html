@@ -9,6 +9,22 @@
 </head>
 <body>
 
+	<div class="load">
+		<div class="entete"><h1>Mylène <span>&</span> Pierre-André</h1>
+			<p>Un petit instant, ça charge :)</p></div>
+		
+		<span class="heart">
+
+			<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	  viewBox="0 0 20 17.117" enable-background="new 0 0 20 17.117" xml:space="preserve">
+<path fill="#CF5B61" d="M17.059,0.472c-2.548-1.179-5.88-0.07-7.059,2.472C8.821,0.402,5.489-0.708,2.941,0.472
+	C0.227,1.731-1.07,4.946,1.073,8.739c1.522,2.699,4.22,4.733,8.927,8.378c4.707-3.645,7.405-5.68,8.927-8.378
+	C21.07,4.946,19.773,1.731,17.059,0.472"/>
+</svg>
+
+		</span>
+	</div>
+
 	<header class="entete wrapper">
 		<h1>Mylène <span>&</span> Pierre-André</h1>
 	</header>
@@ -214,12 +230,12 @@
 
 					<div class="group-form">
 						<label for="name">Nom & prénom ?</label>
-						<input type="text" id="name" name="name">
+						<input type="text" id="name" required name="name">
 					</div>
 					
 					<div class="group-form">
 						<label for="email">Une adresse email ?</label>
-						<input type="email" id="email" name="email">
+						<input type="email" id="email" required name="email">
 					</div>				
 
 				</div>
@@ -227,12 +243,12 @@
 				<div class="group-participation">
 
 					<div class="group-form">
-						<input type="radio" id="acceptation_participation" name="participation" value="Participera">
+						<input type="radio" required id="acceptation_participation" name="participation" value="Participera">
 						<label for="acceptation_participation">Je participerais aux festivités</label>
 					</div>
 
 					<div class="group-form">
-						<input type="radio" id="refus-participation" name="participation" value="Ne participera pas">
+						<input type="radio" required id="refus-participation" name="participation" value="Ne participera pas">
 						<label for="refus-participation">Je ne suis malheuresement pas disponible</label>
 					</div>
 
@@ -300,7 +316,7 @@
 	<script src="js/sticky.min.js"></script>
 	<script src="js/autosize.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
-	<script src="js/js.js"></script>
+	<script src="js/js.js?v=1"></script>
 
 </body>
 </html>

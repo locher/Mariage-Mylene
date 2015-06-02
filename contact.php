@@ -32,7 +32,7 @@ echo('<html><head>
     </head>
     <body class="mail wrapper">
 
-    	<h2 class="classic-h2">Récapitulatif de votre inscription</h2>
+    	<h2 class="classic-h2">Merci pour votre réponse :)</h2>
     	<ul>
     	    <li><b>Votre nom : </b>'.$name.'</li>
     		<li><b>Votre email : </b>'.$email.'</li>

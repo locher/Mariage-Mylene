@@ -1,17 +1,24 @@
 // Ajouter class JS
 $('body').addClass('js');
+$('.load').show();
+
+$(window).load(function() {
+    $('.load').fadeOut(); 
+});
 
 // Parallaxe du header
 $(document).ready(function() {
 
     $(window).scroll(function(e){
+        if($('body').width() > 900){
         parallax();
+    }
     });
 });
 
 function parallax(){
   var scrolled = $(window).scrollTop();
-  $('.bg').css('top',128-(scrolled*0.2)+'px');
+  $('.bg').css('top',128-(scrolled*0.4)+'px');
   $('.top-banner h2').css('top',32-(scrolled*0.15)+'%');
 }
 
@@ -37,77 +44,88 @@ $(document).scroll(function(){
     image_scroll();
 });
 
-
-
-// Animation
-
 $(document).ready(function() {
 
-    $('.raccourci-rep .wrapper').each(function() {
-        $(this).waypoint(function() {
-          $('.raccourci-rep .wrapper').addClass('fadeIn');    
-        }, {
-          offset: '80%'
-        });
+    animation_elt();
+
+    // Animation
+
+    $(window).resize(function(){
+        animation_elt();
     });
 
-    $('.evt1').each(function() {
-        $(this).waypoint(function() {
-          $('.evt1').addClass('fadeInLeft animated');    
-        }, {
-          offset: '80%'
-        });
-    });
+}
 
-    $('.evt3').each(function() {
-        $(this).waypoint(function() {
-          $('.evt3').addClass('fadeInLeft animated');    
-        }, {
-          offset: '80%'
-        });
-    });
+function animation_elt(){
 
-    $('.evt2').each(function() {
-        $(this).waypoint(function() {
-          $('.evt2').addClass('fadeInRight animated');    
-        }, {
-          offset: '80%'
-        });
-    });
+    if($('body').width() > 900){
 
-    $('.evt4').each(function() {
-        $(this).waypoint(function() {
-          $('.evt4').addClass('fadeInRight animated');    
-        }, {
-          offset: '80%'
+        $('.raccourci-rep .wrapper').each(function() {
+            $(this).waypoint(function() {
+              $('.raccourci-rep .wrapper').addClass('fadeIn');    
+            }, {
+              offset: '80%'
+            });
         });
-    });
 
-    $('.etape1').each(function() {
-        $(this).waypoint(function() {
-          $('.etape1').addClass('fadeInLeft animated');    
-        }, {
-          offset: '80%'
+        $('.evt1').each(function() {
+            $(this).waypoint(function() {
+              $('.evt1').addClass('fadeInLeft animated');    
+            }, {
+              offset: '80%'
+            });
         });
-    });
 
-    $('.etape2').each(function() {
-        $(this).waypoint(function() {
-          $('.etape2').addClass('fadeInRight animated');    
-        }, {
-          offset: '80%'
+        $('.evt3').each(function() {
+            $(this).waypoint(function() {
+              $('.evt3').addClass('fadeInLeft animated');    
+            }, {
+              offset: '80%'
+            });
         });
-    });
 
-
-    $('.dormir').each(function() {
-        $(this).waypoint(function() {
-          $('.dormir').addClass('fadeIn animated');    
-        }, {
-          offset: '80%'
+        $('.evt2').each(function() {
+            $(this).waypoint(function() {
+              $('.evt2').addClass('fadeInRight animated');    
+            }, {
+              offset: '80%'
+            });
         });
-    });
-});
+
+        $('.evt4').each(function() {
+            $(this).waypoint(function() {
+              $('.evt4').addClass('fadeInRight animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+
+        $('.etape1').each(function() {
+            $(this).waypoint(function() {
+              $('.etape1').addClass('fadeInLeft animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+
+        $('.etape2').each(function() {
+            $(this).waypoint(function() {
+              $('.etape2').addClass('fadeInRight animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+
+
+        $('.dormir').each(function() {
+            $(this).waypoint(function() {
+              $('.dormir').addClass('fadeIn animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+    }
+};
 
 
 // Choper la hauteur de lovestory pour l'appliquer sur la ligne et le parent
@@ -247,4 +265,10 @@ $('nav a').click(function(){
 $('.raccourci-rep a').click(function(){
     var cible = $(this).attr('href');
     $(window).scrollTo(cible, 1100);
+});
+
+// Menu pour portable
+
+$('.bt-menu').click(function(){
+    $('nav').toggleClass('show');
 });

@@ -28,14 +28,17 @@ $espace: 40px;
 @import "mail";
 
 %alpha0{
-	opacity: 0;
+	@include width-above(900px){
+		opacity: 0;
+	}
+	
 }
 
 %content-h3{
 	font-family: 'Alegreya', serif;
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 15px;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
 
 strong{
@@ -94,6 +97,11 @@ body{
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
+	background-color: #fff;
+
+	@include width-below(450px){
+		font-size: 2.3rem;
+	}
 
 	span{
 		color: $rouge;
@@ -127,8 +135,9 @@ body{
 		width: 100%;
 		background: url('../img/banner.jpg');
 		background-size: cover;
-		background-position: center;
-  		
+		background-position: center;  
+
+
 	}
 
 	h2{
@@ -145,8 +154,15 @@ body{
   		@extend .fadeInDown;
 
   		@include width-below(900px){
-		    font-size: 10rem;
+		    font-size: 9rem;
 		    line-height: 7rem;
+		    top:15%;
+		}
+
+		  @include width-below(350px){
+		    font-size: 6rem;
+		    line-height: 4rem;
+		    top:15%;
 		}
 	}
 
@@ -184,10 +200,13 @@ body{
 .js .top-banner{
 
 	.bg{
-		min-height: calc(100% - 128px);
-		position: fixed;
-		top:128px; //à modifier dans le js aussi, sinon saut au scroll
-		left:0;
+
+		@include width-above(900px){
+			min-height: calc(100% - 128px);
+			position: fixed;
+			top:128px; //à modifier dans le js aussi, sinon saut au scroll
+			left:0;
+		}
   		
 	}
 } 
@@ -211,6 +230,11 @@ body{
 
 		@include width-below(900px){
 			font-size: 2.5rem;
+			top: calc(15% + 160px);
+		}
+
+		@include width-below(400px){
+			font-size: 2rem;
 		}
 
 		span{
@@ -228,6 +252,10 @@ body{
 
 		@extend .animated;
 		@extend .fadeInUp;
+
+		@include width-below(900px){
+			display: none;
+		}
 	}
 
 	.pre-compteur{
@@ -245,9 +273,19 @@ nav{
 	background-color: rgba(#fff, .87);
 	text-align: center;
 
+		@include width-below(950px){
+			display: none;
+		}
+
+	&.show{
+		@include width-below(950px){
+			display: block;
+		}
+	}
+
 	@include width-below(950px){
 			position: absolute;
-			z-index: 100;
+			z-index: 1000;
 			width: 100%;
 			top: 0;
 	}
@@ -257,8 +295,7 @@ nav{
 		text-transform: uppercase;
 
 		@include width-below(950px){
-			display: inline-block;
-			width: 50%;
+			width: 100%;
 		}
 	}
 
@@ -268,6 +305,10 @@ nav{
 		color: rgba(#000, .46);
 		text-decoration: none;
 		padding: 1.2em;
+
+		@include width-below(950px){
+			padding: .9em;
+		}
 
 		&:hover{
 			color: $rouge;
@@ -280,6 +321,12 @@ nav{
 	}
 }
 
+.bt-menu{
+	@include width-above(950px){
+		display: none;
+	}
+}
+
 // Menu accroché en haut
 
 .stuck{
@@ -289,6 +336,10 @@ nav{
 	left: 0;
 	width: 100%;
 	background-color: rgba(#fff, .95);
+
+	@include width-below(950px){
+		position: static;
+	}
 }
 
 .link-disabled{
@@ -355,6 +406,10 @@ nav{
 		color: $rouge;
 		margin-bottom: $espace/2;
 
+		@include width-below(1050px){
+			margin-left: $espace;
+		}
+
 		&:before{
 			content: url('../img/calendrier.svg');
 			margin-right: 7px;
@@ -373,6 +428,10 @@ nav{
 		background-color: $trait;
 		height: 400px;
 		left: 50%;
+
+		@include width-below(1050px){
+			display: none;
+		}
 	}
 }
 
@@ -506,6 +565,10 @@ nav{
 		max-width: 100%;
 	}
 
+	@include width-below(500px){
+		flex-direction: column;
+	}
+
 
 	
 }
@@ -516,10 +579,20 @@ nav{
 
 	background-size: cover;
 	border-radius: 100%;
+
+	@include width-below(500px){
+		order:1;
+		margin-bottom: 20px;
+	}
 }
 
 .evt-text{
 	flex: 1;
+
+	@include width-below(500px){
+		order:2;
+		text-align: center;
+	}
 
 	p{
 		line-height: 1.3em;
@@ -653,20 +726,15 @@ nav{
 }
 
 
-
-
-
-
-
-
-
-
-
 //Repas
 
 .repas-uniquement{
 	background-color: #fff;
 	padding-top: 100px;
+
+	h2{
+		padding: 0 $espace;
+	}
 }
 
 .content-repas{
@@ -710,7 +778,7 @@ nav{
 .contenu-repas{
 	background-color: #fff;
 	border-radius: 0 4px 4px 0;
-	padding: $espace 0 $espace $espace;
+	padding: $espace;
 	flex: 1;
 	height: 100%;
 	min-height: 250px;
@@ -730,7 +798,7 @@ nav{
 	background-color: #fff;
 	text-align: center;
 	position: relative;
-	padding: 100px;
+	padding: 100px $espace $espace;
 
 	&::after{ // Continuation du trait
 		content:'';
@@ -818,6 +886,10 @@ nav{
 	.wrapper-form{
 		display: flex;
 
+		@include width-below(600px){
+			display: block;
+		}
+
 		.group-form{
 			flex:1;
 			margin-bottom: 25px;
@@ -825,6 +897,10 @@ nav{
 
 		.group-form:nth-child(1){
 			margin-right: 20px;
+
+			@include width-below(600px){
+				margin-right: 0;
+			}
 		}
 
 		input[type="text"],
@@ -896,6 +972,12 @@ nav{
 		margin-top: 25px;
 	}
 
+	.bt{
+		@include width-below(600px){
+			font-size: 1.5rem !important;
+		}
+	}
+
 }
 
 .js{
@@ -909,6 +991,10 @@ nav{
 
 .wrapper-fin{
 	display: flex;
+
+	@include width-below(600px){
+		display: block;
+	}
 }
 
 // liste
@@ -943,6 +1029,55 @@ nav{
 	}
 }
 
+//LOAD
 
+.load{
+	display: none;
+	position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: #fff;
+   z-index: 500; 
+   padding-top: 100px;
 
+   .entete p{
+   		text-transform: none;
+   		margin-top: 20px;
+   }
 
+   h1{
+   	font-size: 4rem;
+   }
+
+   .heart{
+
+   	text-align: center;
+   	display: block;
+
+	svg{
+		height: 50px;
+		width: 50px;
+
+		animation: heart 1s infinite;
+		animation-timing-function: ease-out;
+	}
+
+   }
+
+   .heart path{
+		fill: $rouge;
+   }
+}
+
+@keyframes heart{
+
+	0%{
+		transform: scale(1);
+	}
+
+	100%{
+		transform: scale(1.4);
+	}
+}
