@@ -27,6 +27,7 @@ if(isset($participation) && isset($name) && $name != ""){
 // Page de confirmation
 	
 echo('<html><head>
+    <meta charset="UTF-8">
         <title>Récapitulatif de votre inscription</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
@@ -90,7 +91,7 @@ echo('
 
     $headers .= 'From: '.$name.' <'.$email.'>';
 
-    mail('herrloc@gmail.com', '[Pamylene] '.$name.' a répondu', $message, $headers);
+    mail('pamylene@gmail.com', '[Pamylene] '.$name.' a répondu', $message, $headers);
 
 }
 

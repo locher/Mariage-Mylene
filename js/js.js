@@ -2,24 +2,36 @@
 $('body').addClass('js');
 $('.load').show();
 
+// Une fois la page chargée, on vire le loader
 $(window).load(function() {
     $('.load').fadeOut(); 
 });
+
+
+
 
 // Parallaxe du header
 $(document).ready(function() {
 
     $(window).scroll(function(e){
-        if($('body').width() > 900){
         parallax();
-    }
+        image_scroll();
+    });
+
+    animation_elt();
+
+    $(window).resize(function(){
+        animation_elt();
     });
 });
 
+
 function parallax(){
-  var scrolled = $(window).scrollTop();
-  $('.bg').css('top',128-(scrolled*0.4)+'px');
-  $('.top-banner h2').css('top',32-(scrolled*0.15)+'%');
+    if($('body').width() > 900){
+      var scrolled = $(window).scrollTop();
+      $('.bg').css('top',128-(scrolled*0.4)+'px');
+      $('.top-banner h2').css('top',32-(scrolled*0.15)+'%');
+    }
 }
 
 //Menu sticky
@@ -38,22 +50,6 @@ function image_scroll(){
     else{
         $('.bg').show();
     }
-}
-
-$(document).scroll(function(){
-    image_scroll();
-});
-
-$(document).ready(function() {
-
-    animation_elt();
-
-    // Animation
-
-    $(window).resize(function(){
-        animation_elt();
-    });
-
 }
 
 function animation_elt(){
