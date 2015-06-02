@@ -208,18 +208,18 @@
 			<h2 class="classic-h2">Votre réponse</h2>
 			<p class="sous-h2">Veuillez s'il vous plait confirmer votre présence avant le <span>22 juin</span>.</p>
 
-			<form action="#">
+			<form action="contact.php" method="POST">
 
 				<div class="wrapper-form">
 
 					<div class="group-form">
 						<label for="name">Nom & prénom ?</label>
-						<input type="text" id="name">
+						<input type="text" id="name" name="name">
 					</div>
 					
 					<div class="group-form">
 						<label for="email">Une adresse email ?</label>
-						<input type="email" id="email">
+						<input type="email" id="email" name="email">
 					</div>				
 
 				</div>
@@ -227,12 +227,12 @@
 				<div class="group-participation">
 
 					<div class="group-form">
-						<input type="radio" id="acceptation_participation" name="participation">
+						<input type="radio" id="acceptation_participation" name="participation" value="Participera">
 						<label for="acceptation_participation">Je participerais aux festivités</label>
 					</div>
 
 					<div class="group-form">
-						<input type="radio" id="refus-participation" name="participation">
+						<input type="radio" id="refus-participation" name="participation" value="Ne participera pas">
 						<label for="refus-participation">Je ne suis malheuresement pas disponible</label>
 					</div>
 
@@ -240,7 +240,7 @@
 
 
 				<div class="group-form checkbox_accompagnant">
-					<input type="checkbox" id="accompagne" name="accompagne">
+					<input type="checkbox" id="accompagne" name="accompagne" value="oui">
 					<label for="accompagne">Je serais accompagné ?</label>
 				</div>
 
@@ -250,11 +250,11 @@
 				</div>
 
 				<div class="group-form resa group-chambre">
-					<input type="checkbox" id="chambre" name="chambre">
+					<input type="checkbox" id="chambre" name="chambre" value="oui">
 					<label for="chambre">Je souhaite réserver une chambre</label>
 					<span>pour</span>
 
-					<input type="number" min="0" id="nombre_chambre" value="1">
+					<input type="number" min="0" id="nombre_chambre" name="nb_chambre" value="1">
 					<label for="nombre_chambre">personnes</label>
 
 				</div>
