@@ -5,7 +5,7 @@ module.exports = function(grunt){
 		watch: {
 			'default': {
 				files: ['Gruntfile.js', 'sass/*.scss'],
-				tasks: ['sass:dev', 'autoprefixer', 'uglify']
+				tasks: ['sass:dev', 'autoprefixer']
 			}
 		},
 		sass: {
@@ -37,17 +37,9 @@ module.exports = function(grunt){
 			},
 
 		},
-		uglify: {
-		    my_target: {
-		      files: {
-		        'js/output.min.js': ['js/*.js']
-		      }
-	    	}
- 	 	}
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 }

@@ -175,25 +175,29 @@ body{
 	content: url('../img/souris.svg');
 	position: absolute;
 	bottom: 40px;
-	right: calc(50% - 12px);
+	right: calc(50% - 14px);
+	height: 46px;
+	width: 28px;
 }
 
 .top-banner:before{
 	content: url('../img/arrows.svg');
 	position: absolute;
-	bottom: 110px;
-	right: 50%;
+	bottom: 95px;
+	right: calc(50% - 6px);
 	animation: arrow_scroll 1s infinite;
 	animation-timing-function: ease-out;
+	height: 23px;
+	width: 11px;
 }
 
 @keyframes arrow_scroll{
 	0%{
-		bottom: 110px;
+		bottom: 95px;
 	}
 
 	100%{
-		bottom: 115px;
+		bottom: 100px;
 	}
 } 
 
@@ -372,7 +376,7 @@ nav{
 	}
 }
 
-.js .raccourci-rep .wrapper{
+.js.opacity .raccourci-rep .wrapper{
 	@extend %alpha0;
 	@extend .animated;
 
@@ -471,6 +475,8 @@ nav{
 			position: absolute;
 			top: calc(50% + 5px); // en fait 50% + 13 (voir en haut) - hauteur du coeur / 2
 			border: 10px solid #fff;
+			width: 20px;
+			height: 17px;
 		}
 
 
@@ -549,7 +555,7 @@ nav{
 	top: 450px;
 }
 
-.js .evt-lovestory{
+.js.opacity .evt-lovestory{
 	@extend %alpha0;
 }
 
@@ -629,6 +635,8 @@ nav{
 		left: calc(50% - 20px);
 		border: 10px solid #fff;
 		z-index: 2;
+		width: 20px;
+		height: 17px;
 	}
 
 	.wrapper{
@@ -716,7 +724,7 @@ nav{
 		}
 }
 
-.js .etape{
+.js.opacity .etape{
 
 	@extend %alpha0;
 
@@ -786,6 +794,22 @@ nav{
 }
 
 
+	.list-cordo{
+		margin-top: 10px;
+			li{
+		line-height: 1.4em;
+		text-align: center;
+		color: #5C1B1E;
+	}
+
+	a{
+		color: inherit;
+	}
+	}
+
+
+
+
 
 
 
@@ -842,9 +866,19 @@ nav{
 		font-style: italic;
 		color: #9d9d9d;
 	}
+
+	.conditions{
+
+		p{
+			font-style: italic;
+			color: #7f7f7f;
+		}
+			margin-top: $espace;
+
+	}
 }
 
-.js .dormir{
+.js.opacity .dormir{
 	@extend %alpha0;
 	animation-delay: .2s;
 }
@@ -1080,4 +1114,8 @@ nav{
 	100%{
 		transform: scale(1.4);
 	}
+}
+
+.ie *{
+	opacity: 1 !important;
 }
