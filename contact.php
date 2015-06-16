@@ -66,6 +66,31 @@ echo('
 
 // Envoi d'un email aux amoureux
 
+    if($chambre == 'oui'){
+
+            $message = '<html><head>
+        <title>Récapitulatif de votre inscription</title>
+    </head>
+    <body>
+
+        <h2>Nouvelle inscription</h2>
+        <ul>
+            <li><b>Nom : </b>'.$name.'</li>
+            <li><b>Email : </b>'.$email.'</li>
+            <li><b>Participation : </b>'.$participation.'</li>
+            <li><b>Viendra accompagné : </b>'.$accompagnant.'</li>
+            <li><b>Viendra avec : </b>'.$noms_accompagnant.'</li>
+            <li><b>Voudrait une chambre pour : </b>'.$nb_chambre.' personne(s)</li>
+            <li><b>A laissé ce message : </b>'.$message.'</li>
+        </ul>
+
+    </body>
+    </html>';
+
+    }
+
+    else{
+
     $message = '<html><head>
         <title>Récapitulatif de votre inscription</title>
     </head>
@@ -78,12 +103,13 @@ echo('
     		<li><b>Participation : </b>'.$participation.'</li>
  			<li><b>Viendra accompagné : </b>'.$accompagnant.'</li>
     		<li><b>Viendra avec : </b>'.$noms_accompagnant.'</li>
-    		<li><b>Voudrait une chamnbre pour : </b>'.$nb_chambre.' personne(s)</li>
     		<li><b>A laissé ce message : </b>'.$message.'</li>
     	</ul>
 
     </body>
     </html>';
+
+}
 
     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
     $headers  = 'MIME-Version: 1.0' . "\r\n";

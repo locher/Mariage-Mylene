@@ -1,0 +1,912 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"anim",
+				"animation_elt"
+			],
+			[
+				"acc",
+				"accompagnant"
+			],
+			[
+				"image",
+				"image_scroll"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"ver",
+				"verif_accompagnants"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"hau",
+				"hauteur_last"
+			],
+			[
+				"hauteur",
+				"hauteur_bas"
+			],
+			[
+				"po",
+				"position_haut"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"styles",
+				"stylesheets"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pad",
+				"padding-base"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"padd",
+				"padding-base"
+			],
+			[
+				"paddin",
+				"padding-base"
+			],
+			[
+				"padding",
+				"padding-base"
+			],
+			[
+				"let",
+				"left"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"bleu",
+				"bleu_clair"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"the_",
+				"the_field"
+			],
+			[
+				"id",
+				"id_parent"
+			],
+			[
+				"wp",
+				"wp_get_post_parent_id"
+			],
+			[
+				"wp_g",
+				"wp_get_post_parent_id"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"the",
+				"the_field"
+			],
+			[
+				"op",
+				"open_count"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"bt",
+				"bt"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"search-d",
+				"search-disable"
+			],
+			[
+				"bleu_",
+				"bleu_clair"
+			],
+			[
+				"border-",
+				"border-left"
+			],
+			[
+				"m",
+				"margin-top"
+			],
+			[
+				"mb",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"atta",
+				"attachment_id"
+			],
+			[
+				"bleu-",
+				"bleu-fonce"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"paddig",
+				"padding-right"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"border-image",
+				"border-image-width"
+			],
+			[
+				"border-imag",
+				"border-image-slice"
+			],
+			[
+				"output",
+				"output_style"
+			],
+			[
+				"inli",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 844,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 13564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/js.js",
+			"settings":
+			{
+				"buffer_size": 7221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/styles.scss",
+			"settings":
+			{
+				"buffer_size": 14710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "contact.php",
+			"settings":
+			{
+				"buffer_size": 2469,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/img/coeur.svg",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/index.html",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/_forms.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/contact.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/_mail.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/.htaccess",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/styles.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/js/js.js",
+		"/Users/loicherr/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/loicherr/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/js/contact.php",
+		"/Users/loicherr/Downloads/flexible-breakpoints-master/_breakpoints.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/.gitignore",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/Gruntfile.js",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/package.json",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/_animate.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/stylesheets/animate.min.css",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/stylesheets/animate.css",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/img/arabesque.svg",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/_fontfaces.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/_fonfaces.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/styles.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/sass/index.html",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/package.json",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/README.md",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/carolewedding/carolewedding.sublime-project",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/header.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/footer.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/fairedusport.php",
+		"/Users/loicherr/Desktop/filters.svg",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_home.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_global.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_typo.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_event.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_fairedusport.scss",
+		"/Users/loicherr/Downloads/snazzy-maps-example-blue-water-style.html",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_forms.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/stylesheets/styles.css",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/Gruntfile.js",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_reset.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/config.rb",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/stylesheets/styles.css.map",
+		"/Users/loicherr/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_pageFaireSport.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_fontface.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_modules.scss",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods/sass/_fontface",
+		"/Users/loicherr/Dropbox/ODS/Présentation V2/style.css",
+		"/Users/loicherr/Dropbox/ODS/Présentation V2/manifs",
+		"/Users/loicherr/Dropbox/ODS/Présentation V2/home.html",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/contact-form.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_refences.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_observatoire.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_contenu.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_solution.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_product.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_features.php",
+		"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi/template_contact.php",
+		"/Users/loicherr/Dropbox/site perso 2014/Coming soon/index.html",
+		"/Users/loicherr/Dropbox/site perso 2014/Coming soon/style.css",
+		"/Users/loicherr/Library/Application Support/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/private/var/folders/fj/m95yx5l97wbdfzg5n2cs2k580000gn/T/c5b1f4f5-3713-4c31-a39d-6b9a368c3219/wp-config.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_home.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/functions.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_home.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/404.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/header-bis.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/header.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sidebar.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/single.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_contact.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_contenu.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_features.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_product.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_solution.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/footer.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_refences.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_temoignages.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_sidebar.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_header.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_global.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_typo.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/style.css",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_slider.scss",
+		"/Users/loicherr/Dropbox/template_documentation.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_produits.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-config.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/searchform.php",
+		"/Users/loicherr/Dropbox/filtres_tri.js",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/aside_home.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_icones.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/single-references.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_icones-header.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/archive.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/style.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/archive-annee.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/archive-references.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_page.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_footer.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_overlay.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_observatoire.scss",
+		"/Users/loicherr/Downloads/icomoon (13)/style.css",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_features.html",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_observatoire.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/content.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/index.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_parent.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_fancybox.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/search.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_produits_parent.php",
+		"/Users/loicherr/Downloads/icomoon (11)/style.css",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/template_produits_parent.html",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/images/arrow-right.png",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/theme-slogi/sass/_variables.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/index.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/template_home.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/header.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/style.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_typo.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_icones.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_footer.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_home.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_header.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_variables.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/sass/_global.scss",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/footer.php",
+		"/Applications/MAMP/mamp server/site_slogi/wp-content/themes/twentyfourteen/config.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/MAMP_2014-12-29_13-17-53/mamp server/site_slogi/wp-content/themes/theme-slogi"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"toutes le",
+			"toutes lez",
+			"alpha",
+			"coeur",
+			"heart",
+			"key",
+			"</h2>",
+			"<h2>",
+			"</h2>",
+			"<h2>",
+			"'.",
+			".'",
+			">\n",
+			"'];\n",
+			"img-ev",
+			"img-eta",
+			"		\n",
+			"acceptation",
+			".raccourci-rep",
+			" \n",
+			"li",
+			"trait",
+			"bdb6a6",
+			"13px",
+			"100px",
+			"');\">/",
+			"Lire la suite",
+			"{\n",
+			"	\"sourcesContent\": [],",
+			"\";",
+			"100px",
+			"cul",
+			"tamere",
+			"bite",
+			"service",
+			"julien",
+			"<img src=\"<?php echo get_template_directory_uri() . '/images/livre-blanc.jpg';?>\" alt=\"\" class=\"align-right\">",
+			"		opacity: 80;",
+			"opacity",
+			"transition",
+			"opacit",
+			"opacity",
+			"filter",
+			"calc",
+			"ease-in-out .05)",
+			"ease-in-out .1s)",
+			"ease-in-out .1s);",
+			"transition",
+			"trans",
+			".2s",
+			"});\n",
+			"fancy",
+			">\n",
+			"				\n",
+			"_e",
+			" \n",
+			":\n",
+			"logo",
+			"});\n",
+			"');",
+			"searc",
+			"search",
+			"search for",
+			"js",
+			"?>');\">",
+			"		",
+			"sidebar",
+			";\n",
+			"min-height",
+			"			\n",
+			":#\n",
+			"Médecins",
+			"{\n",
+			"html:5",
+			"5"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"'];\n",
+			"<img src=\"<?php echo get_template_directory_uri() . '/images/livre-blanc.jpg';?>\" alt=\"\" class=\"align-right\">",
+			",\n",
+			"?>');\">",
+			"cen",
+			"	}",
+			"{\n",
+			"round",
+			"li"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								713,
+								713
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 13564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11390,
+								11390
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5959.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "js/js.js",
+					"settings":
+					{
+						"buffer_size": 7221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3155,
+								3155
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1491.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass/styles.scss",
+					"settings":
+					{
+						"buffer_size": 14710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14383,
+								14383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15921.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "contact.php",
+					"settings":
+					{
+						"buffer_size": 2469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2461,
+								2461
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/Monokai.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"carolewedding.sublime-project"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP_2014-12-29_13-17-53/mamp server/ods.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true
+}
