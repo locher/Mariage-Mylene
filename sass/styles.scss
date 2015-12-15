@@ -141,7 +141,7 @@ body{
 	}
 
 	h2{
-		font-size: 14.5rem;
+		font-size: 15.5rem;
 		color: #fff;
 		font-family: 'Great Vibes';		
   		text-shadow: 0 0 40px rgba(#000, .75);
@@ -220,9 +220,9 @@ body{
 		font-family: 'Alegreya sans';
 		color: #fff;
 		text-transform: uppercase;
-		text-shadow: 0 0 20px rgba(#000, .75);
+		text-shadow: 0 0 10px rgba(#000, .75);
 		position: absolute;
-		top: calc(42% + 70px);
+		top: calc(42% + 140px);
 		left: 0;
 		width: 100%;
 		text-align: center;
@@ -399,6 +399,7 @@ nav{
 		color: darken($rouge, 20%);
 		font-weight: 700;
 		box-shadow: 0 4px 0 darken($rouge, 20%);
+		cursor: pointer;
 	}
 
 // Love story
@@ -1065,6 +1066,85 @@ nav{
 		margin-bottom: .5em;
 		text-align: center;
 	}
+}
+
+//Galerie
+
+#galerie{
+	padding: 50px;
+
+	p{
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 2rem;
+		line-height: 1.4em;
+		margin-bottom: .5em;
+		text-align: center;
+
+		span{
+			color: $rouge;
+			font-weight: bold;
+		}
+	}
+
+	a{
+		color: $rouge;
+	}
+
+	.bt{
+		color: #fff;
+		background-color: $rouge;
+	}
+}
+
+.grid{
+
+		margin-top: 50px;
+
+		a{
+			display: block;
+			margin: 0;
+		}
+
+		img{
+			max-width: 100%;
+			display: block;
+			width: auto;
+			height: auto;
+			margin: 0;
+		}
+
+		.grid-sizer,
+		.grid-item{
+			width: 25%;
+
+			@include width-below(900px){
+				width: 33.33333%;
+			}
+
+			@include width-below(650px){
+				width: 50%;
+			}
+
+			@include width-below(400px){
+				width: 100%;
+			}
+		}
+
+		.grid-item--width2{
+
+			width: 50%;
+
+			@include width-below(400px){
+				width: 100%;
+			}
+		}
+	}
+
+iframe{
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
 }
 
 //LOAD
