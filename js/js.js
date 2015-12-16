@@ -96,6 +96,22 @@ function animation_elt(){
             });
         });
 
+        $('.evt5').each(function() {
+            $(this).waypoint(function() {
+              $('.evt5').addClass('fadeInLeft animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+
+        $('.evt6').each(function() {
+            $(this).waypoint(function() {
+              $('.evt6').addClass('fadeInRight animated');    
+            }, {
+              offset: '80%'
+            });
+        });
+
         $('.etape1').each(function() {
             $(this).waypoint(function() {
               $('.etape1').addClass('fadeInLeft animated');    
@@ -130,8 +146,8 @@ $(document).ready(function() {
     position_haut = $('.evt1').offset();
     hauteur_haut = position_haut.top;
 
-    position_bas = $('.evt4').offset();
-    hauteur_last = $('.evt4').height();
+    position_bas = $('.evt6').offset();
+    hauteur_last = $('.evt6').height();
     hauteur_bas = position_bas.top + hauteur_last;
 
     $('.ligne').css('height', hauteur_bas - hauteur_haut);

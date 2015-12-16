@@ -560,6 +560,14 @@ nav{
 	top: 450px;
 }
 
+.evt5{
+	top: 600px;
+}
+
+.evt6{
+	top: 775px;
+}
+
 .js.opacity .evt-lovestory{
 	@extend %alpha0;
 }
@@ -1101,6 +1109,7 @@ nav{
 
 		margin-top: 50px;
 
+
 		a{
 			display: block;
 			margin: 0;
@@ -1143,8 +1152,7 @@ nav{
 
 iframe{
 	display: block;
-	margin: 0 auto;
-	margin-top: 40px;
+	margin: 40px auto;
 }
 
 //LOAD

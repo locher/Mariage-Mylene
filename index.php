@@ -67,9 +67,6 @@
 		<nav>
 			<ul class="wrapper">
 				<li><a href="#lovestory">Notre histoire</a></li><!--
-				--><li><a href="#mariage">Le mariage</a></li><!--
-				--><li><a class="old" href="#dormir">Où dormir ?</a></li><!--
-				--><li><a class="old" href="#reponse">Votre réponse</a></li><!--
 				--><li><a class="galerie" href="#galerie">Galerie</a></li>
 			</ul>
 		</nav>
@@ -146,180 +143,38 @@
 						<div class="img-evt" style="background-image: url('img/jean.jpg');">
 						</div>	
 					</div>
+				</div>
+
+				<div class="evt-lovestory evt5">
+					<div class="date">Septembre 2015</div>
+					<div class="wrapper-evt">
+						<div class="evt-text">
+							<h3>Le mariage</h3>
+							<p>La vie c’est comme une boite de chocolat…ils ont trouvé la personne avec qui la partager.</p><p>
+Heureux mariés, ils se projettent à deux, unis par la bénédiction de leur chère amie et ministre du culte Anne-Sophie. </p>
+						</div>
+						<div class="img-evt" style="background-image: url('img/mariage.jpg');">
+						</div>	
+					</div>
+				</div>	
+
+				<div class="evt-lovestory evt6">
+					<div class="date">Automne 2016</div>
+					<div class="wrapper-evt">
+						<div class="evt-text">
+							<h3>Voyage de noces</h3>
+							<p>Grâce à la générosité de leurs proches et invités, Madame Soleil leur prédit un voyage de noces au pays du Soleil Levant en Automne… Affaire à suivre !</p>
+						</div>
+						<div class="img-evt" style="background-image: url('img/japon.jpg');">
+						</div>	
+					</div>
 				</div>	
 
 			</div>
 		</div>
 	</div>
 
-	<div class="mariage" id="mariage">
-		<div class="wrapper">
 
-			<div class="intro-mariage">
-
-				<h2 class="classic-h2">Le mariage</h2>
-				<p>Cinq années après notre rencontre, nous partageons aujourd’hui le souhait de construire notre foyer commun entourés de nos proches si chers à nos coeurs... </p>
-				<blockquote>Mettez votre pierre à notre édifice !</blockquote>
-
-			</div>
-
-			<div>
-
-			<div class="etape etape1">
-
-				<div class="img-etape" style="background-image: url('img/eglise.jpg');"></div>
-
-				<div class="wrapper-etape">
-					<h3>L’Église protestante de Mittelbergheim</h3>
-					<p class="horaire">19 septembre 2015 à <strong>15 h</strong></p>
-
-<p><strong>Le village viticole de Mittelbergheim sera en ébullition ce samedi 19 septembre.</strong></p>
-<p>Alors que la période des vendanges bat son plein, Mylène et Pierre-André vont s’unir en l’église protestante du village. Les futurs mariés donnent rendez-vous aux invités et gens de passage à 15h00. </p>
-<p>La célébration de leur union sera l’occasion pour les mariés de partager avec leurs familles, amis et toute la communauté rassemblée, leurs engagements et leurs projets d’avenirs.</p>
-
-				</div>
-
-			</div><!--
-
-			--><div class="etape etape2">
-
-				<div class="img-etape" style="background-image: url('img/chateau.jpg');"></div>
-
-				<div class="wrapper-etape">
-					<h3>Apéritif au château de Thanvillé</h3>
-					<p class="horaire">19 septembre 2015 à partir de <strong>17h30</strong></p>
-<p>A l'entrée de la vallée de Villé, le château de Thanvillé monte la garde depuis le XIe siècle. Ancienne demeure d'illustres propriétaires, le château revêt depuis peu sa nouvelle robe.</p>
-<p>Venez découvrir la restauration de cette demeure de charme chargée d’histoire.</p>
-				</div>
-
-			</div>
-
-			</div>
-
-
-		</div>		
-	</div>
-
-	<div class="repas-uniquement wrapper">
-		<h2 class="classic-h2">Vous êtes invité au repas ?</h2>
-
-		<div class="content-repas">
-			<div class="img-etape">
-			</div>
-			<div class="contenu-repas">
-
-			<h3>Repas festif au château de Thanvillé</h3>
-			<p class="horaire">19 septembre 2015 <strong>après l'apéritif</strong></p>
-			<p>Une fois l’apéritif terminé, venez profiter d’un véritable festin en compagnie des mariés… </p>
-<p>Laissez votre voiture au Parking du Château et profitez de la fête jusqu’au bout de la nuit ! </p>
-
-			</div>
-
-		</div>	
-
-	</div>
-
-
-	<div class="dormir" id="dormir">
-
-		<div class="wrapper">
-			<h2 class="classic-h2">Où dormir ?</h2>
-
-			<p>Le Château de Thanvillé sera entièrement réservé pour l’occasion, profitez donc de cette opportunité pour dormir sur place !</p>
-
-			<p>Idéalement situées dans la cour du Château et subtilement meublées, toutes les chambres disposent du confort moderne. Entre vielles pierres et poutre en bois, dépaysement assuré !</p>
-
-			<p><strong><span>Le petit plus : </span>vous retrouverez les jeunes mariés lors du brunch du dimanche matin à partir de 11 heures dans la cour intérieure du château.</strong></p>
-
-			<p>Pour plus d’information, n'hésitez pas à nous consulter.</p>
-
-			<p><strong><span>Réservation impérative auprès des futurs mariés.</span></strong></p>
-
-			<div class="conditions">
-				<p>La réservation de la chambre se fait auprès des jeunes mariés. Le paiement, quant à lui, devra se faire directement auprès de Luc, gestionnaire et régisseur du Château de Thanvillé, le jour même de l'évènement.</p>
-<p>Merci de votre compréhension. </p>
-<p>(Compter une moyenne de 90e pour une chambre 2 personnes. Le château possède également des Appartements contenant plusieurs chambres séparées. Le prix peut donc varier en fonction)</p>
-<p>Il n'y a aucune obligation de dormir sur place. </p>
-			</div>
-		</div>
-		
-	</div>
-
-	<div class="reponse" id="reponse">
-
-		<div class="wrapper">
-			<h2 class="classic-h2">Votre réponse</h2>
-			<p class="sous-h2">Veuillez s'il vous plait confirmer votre présence avant le <span>1er juillet</span>.</p>
-
-				<ul class="list-cordo">
-					<li>Mylène : <a href="tel:+33698908072">06 98 90 80 72</a>  -  Pierre André : <a href="tel:+33675263390">06 75 26 33 90</a></li>
-					<li>Par mail : <a href="mailto:pamylene@gmail.com">pamylene@gmail.com</a></li>
-				</ul>
-
-			<form action="contact.php" method="POST">
-
-				<div class="wrapper-form">
-
-					<div class="group-form">
-						<label for="name">Nom & prénom ?</label>
-						<input type="text" id="name" required name="name">
-					</div>
-					
-					<div class="group-form">
-						<label for="email">Une adresse email ?</label>
-						<input type="email" id="email" required name="email">
-					</div>				
-
-				</div>
-
-				<div class="group-participation">
-
-					<div class="group-form">
-						<input type="radio" required id="acceptation_participation" name="participation" value="Participera">
-						<label for="acceptation_participation">Je participerais aux festivités</label>
-					</div>
-
-					<div class="group-form">
-						<input type="radio" required id="refus-participation" name="participation" value="Ne participera pas">
-						<label for="refus-participation">Je ne suis malheureusement pas disponible</label>
-					</div>
-
-				</div>
-
-
-				<div class="group-form checkbox_accompagnant">
-					<input type="checkbox" id="accompagne" name="accompagne" value="oui">
-					<label for="accompagne">Je serais accompagné ?</label>
-				</div>
-
-				<div class="group-form group-margin nom-accompagnants">
-					<label for="nom_accompagnants">Merci de préciser le ou les noms  des personnes accompagnantes</label>
-					<textarea name="nom_accompagnants" id="nom_accompagnants" placeholder="Ex. Charles Dupont"></textarea>
-				</div>
-
-				<div class="group-form resa group-chambre">
-					<input type="checkbox" id="chambre" name="chambre" value="oui">
-					<label for="chambre">Je souhaite réserver une chambre</label>
-					<span>pour</span>
-
-					<input type="number" min="0" id="nombre_chambre" name="nb_chambre" value="">
-					<label for="nombre_chambre">personnes</label>
-
-				</div>
-
-				<div class="group-form message">
-					<label for="message">Message facultatif</label>
-					<textarea name="message" id="message" placeholder="<3"></textarea>
-				</div>
-
-				<div class="wrapper-submit">
-					<input type="submit" value="Valider ma réponse" class="bt">
-				</div>
-				
-			</form>
-
-		</div>
-	</div>
 
 	<div class="wrapper">
 
@@ -336,6 +191,8 @@
 			<p>Cliquez ensuite sur "<span>Accès aux photos du Mariage de Mylène et Pierre-André</span>"</p>
 			<p><a class="bt" href="http://www.photographe-de-mariage.info">Site du photographe</a></p>
 
+			<iframe src="https://player.vimeo.com/video/135071182?color=ff0179&byline=0&portrait=0" width="900" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 			<div class="grid">
 
 				<div class="grid-sizer"></div>
@@ -349,15 +206,12 @@
 			</div>
 
 			
-		<iframe src="https://player.vimeo.com/video/135071182?color=ff0179&byline=0&portrait=0" width="900" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 		</div>
 
 
 	</div>
-
-
-
 
 
 	<script src="js/jquery-1.11.3.min.js"></script>
